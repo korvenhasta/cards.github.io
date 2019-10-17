@@ -1,0 +1,9 @@
+
+.image-popup__content {
+    max-width: 80vw;
+    max-height: 80vh;
+    background-color: transparent;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
