@@ -1,3 +1,5 @@
+import {popUp} from "./script.js";
+
 /* Класс для получения данных из сервера */ 
 class Api {
     constructor(url, cohort, headers) {
@@ -140,4 +142,6 @@ class Api {
         .catch(this.handleError)
         .finally(onComplete);
     }
-} 
+}
+
+export default Api;

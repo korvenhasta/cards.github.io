@@ -1,3 +1,5 @@
+import {popUp, api} from "./script.js";
+
 /* Класс для обновления данных в профиле */ 
 class Profile {
     constructor(container) {
@@ -65,3 +67,5 @@ class Profile {
         return this.userAvatarElement.style.backgroundImage.slice(5, length - 2);
     } 
 }
+
+export default Profile;

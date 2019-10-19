@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>"> <!--./pages/index.css -->
+  <!-- <link rel="stylesheet" href="./pages/index.css"> -->
 </head>
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg')%>" alt="mesto logo" class="logo"> 
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -26,26 +27,11 @@
 
     <div class="places-list root__section"> 
 
-      <!-- Пример вёрстки карточки: -->
-
-      <!--<div class="place-card">
-        <div class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
-          <button class="place-card__delete-icon"></button>
-        </div>
-        <div class="place-card__description">
-          <h3 class="place-card__name">Камчатка</h3>
-          
-          <button class="place-card__like-icon"></button>
-
-        </div>
-      </div>--> 
-
-      <!-- конец примера. -->
     </div>
     
     <div class="popup">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="popup__close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="new">
             <div class="popup__container">
@@ -65,21 +51,13 @@
     <!-- Попап для картинки с местом -->
     <div class="image-popup">
       <div class="image-popup__content">
-        <img src="./images/close.svg" alt="" class="image-popup__close">
+        <img src="<%=require('./images/close.svg')%>" alt="" class="image-popup__close">
         <img class="image-popup__place-card">
       </div>
     </div>
 
-    
-
   </div>
-  <script src="./script/initialCards.js"></script>
-  <script src="./script/errorMessageSet.js"></script>
-  <script src="./script/card.js"></script>
-  <script src="./script/cardList.js"></script>
-  <script src="./script/popUp.js"></script>
-  <script src="./script/profile.js"></script>
-  <script src="./script/api.js"></script>
-  <script src="script.js"></script> 
+  <script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  <!--<script type="module" src="./script.js"></script>-->
 </body>
 </html>

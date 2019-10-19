@@ -1,3 +1,5 @@
+import {api, userProfile} from "./script.js";
+
 /* Класс для карточки */
 class Card {
     constructor(name, image, likes, cardID, ownerID) {
@@ -112,3 +114,5 @@ class Card {
         return {cardContainer, likeButton, likeParagraph};
     }
 }
+
+export default Card;

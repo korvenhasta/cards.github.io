@@ -1,6 +1,15 @@
+import '../pages/main.css';
+import Api from './api.js';
+import Card from './card.js';
+import CardList from './cardList.js';
+import Popup from './popUp.js';
+import Profile from './profile.js';
+
 /* Функция. Избавимся от глобальных переменных */
 function starter() {
     /* Переменные. Объявим переменные и создадим экземпляры классов */
+    const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk' : 'https://praktikum.tk'
+
     const placesContainer = document.querySelector('.places-list');
 
     const profileContainer = document.querySelector('.profile');
@@ -15,9 +24,9 @@ function starter() {
 
     return {
         popUp: new Popup(popUpContainer, addCardButton, editProfileButton, userPhoto),
-        cardList: new CardList(placesContainer, imagePopUpContainer), // initialCards.map(card => new Card(card.name, card.link))
+        cardList: new CardList(placesContainer, imagePopUpContainer),
         api: new Api(
-            'http://95.216.175.5',
+            serverUrl,
             'cohort3',
             {
                 authorization: '68830182-4ec3-4d6b-ac07-216b5e39765e',
@@ -46,3 +55,5 @@ let {popUp, cardList, api, userProfile} = starter(); // воспользуемс
 /* Вызовем функции */
 getProfileFromServer();
 getInitialCardsFromServer();
+
+export {popUp, cardList, api, userProfile};

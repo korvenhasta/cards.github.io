@@ -1,3 +1,6 @@
+import Card from './card.js';
+import {popUp, api} from "./script.js";
+
 /* Класс для хранения и отрисовки карточек */ 
 class CardList {
     constructor(container, imagePopUpContainer) {
@@ -65,3 +68,5 @@ class CardList {
         );
     }
 }
+
+export default CardList;
