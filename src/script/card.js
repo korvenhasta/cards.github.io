@@ -1,5 +1,5 @@
 /* Класс для карточки */
-class Card {
+export class Card {
     constructor(name, image, likes, cardID, ownerID) {
         let card = this;
         this.cardID = cardID;

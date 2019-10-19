@@ -1,5 +1,5 @@
 /* Класс для обновления данных в профиле */ 
-class Profile {
+export class Profile {
     constructor(container) {
         this.userNameElement = container.querySelector('.user-info__name');
         this.userJobTitleElement = container.querySelector('.user-info__job');

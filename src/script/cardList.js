@@ -1,5 +1,7 @@
 /* Класс для хранения и отрисовки карточек */ 
-class CardList {
+import {Card} from './card.js';
+
+export class CardList {
     constructor(container, imagePopUpContainer) {
         this.container = container;
         this.cardsArray = [];

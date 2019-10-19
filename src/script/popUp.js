@@ -1,5 +1,7 @@
 /* Класс для всплывающего окна */ 
-class Popup {
+import {errorMessageSet} from './errorMessageSet.js';
+
+export class Popup {
     constructor(container, addCardButton, editProfileButton, userPhoto) {
         this.container = container;
         this.submitButton = document.querySelector('.popup__button');

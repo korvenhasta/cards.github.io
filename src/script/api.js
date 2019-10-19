@@ -1,5 +1,5 @@
 /* Класс для получения данных из сервера */ 
-class Api {
+export class Api {
     constructor(url, cohort, headers) {
         // тело конструктора
         this.url = url;
