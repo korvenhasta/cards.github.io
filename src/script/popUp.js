@@ -1,6 +1,7 @@
-/* Класс для всплывающего окна */ 
 import {errorMessageSet} from './errorMessageSet.js';
+import {popUp, cardList, userProfile} from "./script.js";
 
+/* Класс для всплывающего окна */ 
 class Popup {
     constructor(container, addCardButton, editProfileButton, userPhoto) {
         this.container = container;

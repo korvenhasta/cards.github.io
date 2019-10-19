@@ -8,7 +8,7 @@ import Profile from './profile.js';
 /* Функция. Избавимся от глобальных переменных */
 function starter() {
     /* Переменные. Объявим переменные и создадим экземпляры классов */
-    const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort3' : 'https://praktikum.tk/cohort3'
+    const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk' : 'https://praktikum.tk'
 
     const placesContainer = document.querySelector('.places-list');
 
@@ -55,3 +55,5 @@ let {popUp, cardList, api, userProfile} = starter(); // воспользуемс
 /* Вызовем функции */
 getProfileFromServer();
 getInitialCardsFromServer();
+
+export {popUp, cardList, api, userProfile};

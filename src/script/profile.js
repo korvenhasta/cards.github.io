@@ -1,3 +1,5 @@
+import {popUp, api} from "./script.js";
+
 /* Класс для обновления данных в профиле */ 
 class Profile {
     constructor(container) {

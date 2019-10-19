@@ -1,6 +1,7 @@
-/* Класс для хранения и отрисовки карточек */ 
 import Card from './card.js';
+import {popUp, api} from "./script.js";
 
+/* Класс для хранения и отрисовки карточек */ 
 class CardList {
     constructor(container, imagePopUpContainer) {
         this.container = container;
