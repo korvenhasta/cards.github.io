@@ -1,7 +1,7 @@
 /* Класс для хранения и отрисовки карточек */ 
-import {Card} from './card.js';
+import Card from './card.js';
 
-export class CardList {
+class CardList {
     constructor(container, imagePopUpContainer) {
         this.container = container;
         this.cardsArray = [];
@@ -67,3 +67,5 @@ export class CardList {
         );
     }
 }
+
+export default CardList;

@@ -1,5 +1,5 @@
 /* Класс для обновления данных в профиле */ 
-export class Profile {
+class Profile {
     constructor(container) {
         this.userNameElement = container.querySelector('.user-info__name');
         this.userJobTitleElement = container.querySelector('.user-info__job');
@@ -65,3 +65,5 @@ export class Profile {
         return this.userAvatarElement.style.backgroundImage.slice(5, length - 2);
     } 
 }
+
+export default Profile;

@@ -1,5 +1,5 @@
 /* Класс для получения данных из сервера */ 
-export class Api {
+class Api {
     constructor(url, cohort, headers) {
         // тело конструктора
         this.url = url;
@@ -140,4 +140,6 @@ export class Api {
         .catch(this.handleError)
         .finally(onComplete);
     }
-} 
+}
+
+export default Api;

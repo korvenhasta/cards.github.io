@@ -1,9 +1,9 @@
 import '../pages/main.css';
-import {Api} from './api.js';
-import {Card} from './card.js';
-import {CardList} from './cardList.js';
-import {Popup} from './popUp.js';
-import {Profile} from './profile.js';
+import Api from './api.js';
+import Card from './card.js';
+import CardList from './cardList.js';
+import Popup from './popUp.js';
+import Profile from './profile.js';
 
 /* Функция. Избавимся от глобальных переменных */
 function starter() {

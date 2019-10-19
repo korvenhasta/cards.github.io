@@ -1,7 +1,7 @@
 /* Класс для всплывающего окна */ 
 import {errorMessageSet} from './errorMessageSet.js';
 
-export class Popup {
+class Popup {
     constructor(container, addCardButton, editProfileButton, userPhoto) {
         this.container = container;
         this.submitButton = document.querySelector('.popup__button');
@@ -278,3 +278,5 @@ export class Popup {
         }
     }
 }
+
+export default Popup;
